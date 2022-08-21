@@ -1,0 +1,33 @@
+body{
+    overflow-x: hidden;
+}
+
+.main-bg{
+    background-color: #0D0D0D;
+}
+
+
+.header-title-color{
+    
+    color : #FF5E19;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 70px;
+}
+
+.ball-position{
+    margin-top: 15rem;
+}
+
+.logo{
+margin-top: 2rem;
+}
+
+.ball{
+    margin-top: 12.5rem;
+}
+
+.dot-size{
+    font-size: 4px;
+   position: relative;
+   bottom: 2px;
+}
