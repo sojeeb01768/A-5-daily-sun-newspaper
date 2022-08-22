@@ -14,7 +14,7 @@ document.getElementById('select-neymar').addEventListener('click', function () {
     // disable button
     document.getElementById('select-neymar').disabled = 'true';
 })
-document.getElementById('slect-mbappe').addEventListener('click', function () {
+document.getElementById('select-mbappe').addEventListener('click', function () {
 
     getPlayerName('player-name-3');
 
@@ -89,18 +89,28 @@ function getPlayerName(nameID) {
 document.getElementById('calculate').addEventListener('click', function () {
 
     const elements = document.querySelectorAll('#inputPlayer li');
-    
+
     for (let element of elements) {
+
+        // per player input 
+
         const value = elements.length;
 
         const inputField = document.getElementById('per-player-input');
         const inputValueString = inputField.value;
         const inputValue = parseFloat(inputValueString);
 
+        // error handeler
+
+        if (inputValue < 0 || isNaN(inputValue)) {
+            alert('Please input positive integer value')
+            return inputField.value = '';
+        }
+
         // selected player total expense
 
         const playerTotalCost = value * inputValue;
-        
+
         //  set total expense
 
         const totalCost = document.getElementById('total-cost');
@@ -111,7 +121,7 @@ document.getElementById('calculate').addEventListener('click', function () {
 })
 
 
-document.getElementById('calculate-total').addEventListener('click', function(){
+document.getElementById('calculate-total').addEventListener('click', function () {
 
     // selected player cost 
     const allPlayerExpense = document.getElementById('total-cost');
@@ -123,11 +133,25 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     const managerCostString = managerCost.value;
     const managerCostFloat = parseFloat(managerCostString);
 
+    // error handeler
+
+    if (managerCostFloat < 0 || isNaN(managerCostFloat)) {
+        alert('Please input positive integer value')
+        return managerCost.value = '';
+    }
+
     // coach cost
 
     const coachCost = document.getElementById('coach-cost');
     const coachCostString = coachCost.value;
     const coachCostsFloat = parseFloat(coachCostString)
+
+            // error handeler
+
+    if (coachCostsFloat < 0 || isNaN(coachCostsFloat)) {
+        alert('Please input positive integer value')
+        return coachCost.value = '';
+    }
 
 
     // all cost addition section 
@@ -138,7 +162,7 @@ document.getElementById('calculate-total').addEventListener('click', function(){
 
     const total = document.getElementById('total');
 
-     total.innerText = allCost;
+    total.innerText = allCost;
 
 })
 

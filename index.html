@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Dream Players</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,11 +47,11 @@
                 </div>
             </div>
         </div>
-   </header>
+    </header>
     <!-- header section ends -->
 
 
-<!-- Main section start -->
+    <!-- Main section start -->
     <main class="main-bg">
         <section class="pb-3">
             <div class="container pt-5">
@@ -70,7 +74,7 @@
 
                         </div>
                     </div>
-                     <!-- card 2 Neymar Jr-->
+                    <!-- card 2 Neymar Jr-->
                     <div class="col">
                         <div class="card text-center bg-black">
                             <img src="images/Rectangle 144.png" class="card-img-top" alt="...">
@@ -88,7 +92,7 @@
                         </div>
                     </div>
 
-                     <!-- card 3  Kylian Mbappé-->
+                    <!-- card 3  Kylian Mbappé-->
                     <div class="col">
                         <div class="card text-center bg-black">
                             <img src="images/Rectangle 144 (2).png" class="card-img-top" alt="...">
@@ -97,7 +101,7 @@
                                 <div class="text-secondary">
                                     <span>36 Goals</span> <i class="fa-solid fa-circle dot-size"></i> <span>120
                                         Assist</span>
-                                    <button id="slect-mbappe" class="btn btn-success w-100 mt-3">
+                                    <button id="select-mbappe" class="btn btn-success w-100 mt-3">
                                         SELECT
                                     </button>
                                 </div>
@@ -106,9 +110,9 @@
                         </div>
                     </div>
 
-                     <!-- card 4 --player list-->
+                    <!-- card 4 --player list-->
                     <div class="col">
-                        <div class="card bg-black">
+                        <div class="card bg-black h-100">
                             <div class="card-body">
                                 <h5 class="card-title text-white text-center">Selected - V</h5>
                                 <ol id="inputPlayer" class="text-white"></ol>
@@ -116,7 +120,7 @@
 
                         </div>
                     </div>
-                     <!-- card 5 Vítor Machado-->
+                    <!-- card 5 Vítor Machado-->
                     <div class="col">
                         <div class="card text-center bg-black">
                             <img src="images/Rectangle 144 (3).png" class="card-img-top" alt="...">
@@ -134,7 +138,7 @@
                         </div>
                     </div>
 
-                     <!-- card 6  Sergio Ramos-->
+                    <!-- card 6  Sergio Ramos-->
                     <div class="col">
                         <div class="card text-center bg-black">
                             <img src="images/Rectangle 144 (4).png" class="card-img-top" alt="...">
@@ -151,7 +155,7 @@
 
                         </div>
                     </div>
-                     <!-- card 7 Renato Sanches-->
+                    <!-- card 7 Renato Sanches-->
                     <div class="col">
                         <div class="card text-center bg-black">
                             <img src="images/Rectangle 144 (1).png" class="card-img-top" alt="...">
@@ -168,32 +172,45 @@
                             </div>
                         </div>
                     </div>
-                     <!-- card 8 calculation sector-->
+                    <!-- card 8 calculation sector-->
                     <div class="col">
                         <div class="card bg-black">
 
                             <div class="card-body">
                                 <h5 class="card-title text-white text-center mb-5">Budget</h5>
+
+                                <!-- per player -->
                                 <div class="mb-4">
                                     <span class="text-white-50 me-5">Per Player</span>
                                     <input id="per-player-input" class="bg-black w-50 text-white" type="text">
+                                    <!-- calculate btn -->
                                     <button id="calculate" class="btn btn-success mt-4 w-100">Calculate</button>
                                 </div>
+
+                                
                                 <div>
+                                    <!-- player Expenses -->
+
                                     <div class="mb-3">
                                         <span class="text-white-50 me-5 ">Player Expenses </span>
                                         <span class="text-white me-5 ">$<span id="total-cost">00</span></span>
                                     </div>
+                                    <!-- Manager -->
 
                                     <div class="">
                                         <span class="text-white-50 me-5">Manager</span>
                                         <input id="manager-cost" class="bg-black w-50 text-white mb-2" type="text">
                                     </div>
-
+                                    <!-- coach -->
                                     <div>
                                         <span class="text-white-50 me-4"> Coach </span>
                                         <input id="coach-cost" class="bg-black w-50 text-white ms-5" type="text">
-                                        <button id="calculate-total" class="btn btn-success mt-4 w-100">Calculate total</button>
+
+                                        <!-- Calculate Total btn -->
+                                        <button id="calculate-total" class="btn btn-success mt-4 w-100">Calculate
+                                            total</button>
+
+                                            <!-- Total -->
                                         <div class="mt-3">
                                             <span class="text-white-50 me-5 ">Total </span>
                                             <span class="text-danger me-5 ">$<span id="total">00</span></span>
@@ -241,7 +258,7 @@
 
                         </div>
                     </div>
-                     <!-- card 11-->
+                    <!-- card 11-->
                     <div class="col">
                         <div class="card text-center bg-black">
                             <img src="images/david-villa_2905getty_630.png" class="card-img-top" alt="...">
@@ -267,7 +284,7 @@
 
 
 
-<!-- footer section -->
+    <!-- footer section -->
     <footer class="bg-black">
 
         <div class="container pt-5 ">
@@ -284,7 +301,7 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 
-        <script src="js/app.js"></script>
-</body> 
+    <script src="js/app.js"></script>
+</body>
 
 </html>

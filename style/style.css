@@ -1,33 +1,33 @@
-body{
+body {
     overflow-x: hidden;
 }
 
-.main-bg{
+.main-bg {
     background-color: #0D0D0D;
 }
 
 
-.header-title-color{
-    
-    color : #FF5E19;
+.header-title-color {
+
+    color: #FF5E19;
     font-family: 'Berkshire Swash', cursive;
     font-size: 70px;
 }
 
-.ball-position{
+.ball-position {
     margin-top: 15rem;
 }
 
-.logo{
-margin-top: 2rem;
+.logo {
+    margin-top: 2rem;
 }
 
-.ball{
+.ball {
     margin-top: 12.5rem;
 }
 
-.dot-size{
+.dot-size {
     font-size: 4px;
-   position: relative;
-   bottom: 2px;
+    position: relative;
+    bottom: 2px;
 }
