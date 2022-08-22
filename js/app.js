@@ -3,15 +3,10 @@
 document.getElementById('select-messi').addEventListener('click', function () {
 
     getPlayerName('player-name-1');
-
-   
-
-
 })
 document.getElementById('select-neymar').addEventListener('click', function () {
 
     getPlayerName('player-name-2');
-
 })
 document.getElementById('slect-mbappe').addEventListener('click', function () {
 
@@ -28,6 +23,18 @@ document.getElementById('select-ramos').addEventListener('click', function () {
 document.getElementById('select-sanches').addEventListener('click', function () {
 
     getPlayerName('player-name-6');
+})
+document.getElementById('select-ronaldo').addEventListener('click', function () {
+
+    getPlayerName('player-name-9');
+})
+document.getElementById('select-salah').addEventListener('click', function () {
+
+    getPlayerName('player-name-10');
+})
+document.getElementById('select-villa').addEventListener('click', function () {
+
+    getPlayerName('player-name-11');
 })
 
 // create function to get player name
