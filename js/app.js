@@ -4,7 +4,7 @@ document.getElementById('select-messi').addEventListener('click', function () {
 
     getPlayerName('player-name-1');
 
-    // DisableSelectedButton('select-messi');
+   
 
 
 })
@@ -38,7 +38,7 @@ function getPlayerName(nameID) {
 
     const playerList = document.querySelectorAll('#inputPlayer li');
     const playerListLength = playerList.length;
-    
+
     if (playerListLength >= 5) {
         alert('dont select more than 5');
         return;
@@ -53,37 +53,61 @@ function getPlayerName(nameID) {
 
 }
 
-// // disable button function\\
-// function DisableSelectedButton(btnId) {
-//     const disableBtn = document.getElementById(btnId);
-//     disableBtn.setAttribute('disabled', 'disabled')
-// }
-
 
 // budget  section
 
 document.getElementById('calculate').addEventListener('click', function () {
-    const inputField = document.getElementById('per-player-input');
-    const inputValueString = inputField.value;
-    const inputValue = parseFloat(inputValueString);
 
-    const perPlayerExpense = inputValue;
+    const elements = document.querySelectorAll('#inputPlayer li');
+    for (let element of elements) {
+        const value = elements.length;
 
+        const inputField = document.getElementById('per-player-input');
+        const inputValueString = inputField.value;
+        const inputValue = parseFloat(inputValueString);
 
-    
+        // selected player total expense
 
+        const playerTotalCost = value * inputValue;
+        
+        //  set total expense
+
+        const totalCost = document.getElementById('total-cost');
+        totalCost.innerText = playerTotalCost;
+
+    }
 
 })
 
 
+document.getElementById('calculate-total').addEventListener('click', function(){
+
+    // selected player cost 
+    const allPlayerExpense = document.getElementById('total-cost');
+    const totalExpenseString = allPlayerExpense.innerText;
+    const totalExpenseFloat = parseFloat(totalExpenseString);
+
+    // manager cost
+    const managerCost = document.getElementById('manager-cost');
+    const managerCostString = managerCost.value;
+    const managerCostFloat = parseFloat(managerCostString);
+
+    // coach cost
+
+    const coachCost = document.getElementById('coach-cost');
+    const coachCostString = coachCost.value;
+    const coachCostsFloat = parseFloat(coachCostString)
 
 
+    // all cost addition section 
 
+    const allCost = totalExpenseFloat + managerCostFloat + coachCostsFloat;
 
-function myFunction() {
-    document.getElementById("inputPlayer").innerText;
-    
-  }
+    console.log(allCost);
 
-const myLi = myFunction();
-console.log(myLi);
+    const total = document.getElementById('total');
+
+     total.innerText = allCost;
+
+})
+
