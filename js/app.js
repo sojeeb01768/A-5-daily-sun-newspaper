@@ -3,38 +3,64 @@
 document.getElementById('select-messi').addEventListener('click', function () {
 
     getPlayerName('player-name-1');
+
+    // disable button
+    document.getElementById('select-messi').disabled = 'true';
 })
 document.getElementById('select-neymar').addEventListener('click', function () {
 
     getPlayerName('player-name-2');
+
+    // disable button
+    document.getElementById('select-neymar').disabled = 'true';
 })
 document.getElementById('slect-mbappe').addEventListener('click', function () {
 
     getPlayerName('player-name-3');
+
+    // disable button
+    document.getElementById('select-mbappe').disabled = 'true';
 })
 document.getElementById('select-machado').addEventListener('click', function () {
 
     getPlayerName('player-name-4');
+    // disable button
+    document.getElementById('select-machado').disabled = 'true';
 })
 document.getElementById('select-ramos').addEventListener('click', function () {
 
     getPlayerName('player-name-5');
+
+    // disable button
+    document.getElementById('select-ramos').disabled = 'true';
 })
 document.getElementById('select-sanches').addEventListener('click', function () {
 
     getPlayerName('player-name-6');
+
+    // disable button
+    document.getElementById('select-sanches').disabled = 'true';
 })
 document.getElementById('select-ronaldo').addEventListener('click', function () {
 
     getPlayerName('player-name-9');
+
+    // disable button
+    document.getElementById('select-ronaldo').disabled = 'true';
 })
 document.getElementById('select-salah').addEventListener('click', function () {
 
     getPlayerName('player-name-10');
+
+    // disable button
+    document.getElementById('select-salah').disabled = 'true';
 })
 document.getElementById('select-villa').addEventListener('click', function () {
 
     getPlayerName('player-name-11');
+
+    // disable button
+    document.getElementById('select-villa').disabled = 'true';
 })
 
 // create function to get player name
@@ -50,9 +76,6 @@ function getPlayerName(nameID) {
         alert('dont select more than 5');
         return;
     }
-
-
-
     const orderList = document.getElementById('inputPlayer');
     const li = document.createElement('li');
     li.innerText = playerNameText;
@@ -66,6 +89,7 @@ function getPlayerName(nameID) {
 document.getElementById('calculate').addEventListener('click', function () {
 
     const elements = document.querySelectorAll('#inputPlayer li');
+    
     for (let element of elements) {
         const value = elements.length;
 
